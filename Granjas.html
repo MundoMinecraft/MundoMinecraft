@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Granjas Automáticas - Mundo Minecraft</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+  <style>
+    .contenedor-granjas {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      color: white;
+    }
+
+    details {
+      margin-bottom: 20px;
+      background-color: #3C2F2F;
+      padding: 15px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    summary {
+      font-weight: bold;
+      font-size: 1.2em;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .tipo-granja {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .tipo-granja h4 {
+      margin-bottom: 5px;
+      color: #aaffaa;
+    }
+
+    .tipo-granja ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+
+    .actualizacion {
+      margin-top: 40px;
+      font-style: italic;
+      text-align: center;
+      color: #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mundo Minecraft</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="video.html">Video</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="curiosidades.html">Curiosidades</a></li>
+        <li><a href="granjas.html">Granjas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="contenedor-granjas">
+      <h2 style="text-align: center;">Granjas Automáticas por Versión</h2>
+      <p style="text-align: center;">Haz clic en la versión para ver las mejores granjas organizadas por tipo.</p>
+
+      <!-- Versión 1.21 -->
+      <details>
+        <summary>🔧 Versión 1.21</summary>
+        <div class="tipo-granja">
+          <h4>Granja de hierro</h4>
+          <ul>
+            <li><a href="#">[Link a video o explicación]</a></li>
+          </ul>
+        </div>
+        <div class="tipo-granja">
+          <h4>Granja de experiencia</h4>
+          <ul>
+            <li><a href="#">[Link a video o explicación]</a></li>
+          </ul>
+        </div>
+        <div class="tipo-granja">
+          <h4>Granja de mobs</h4>
+          <ul>
+            <li><a href="#">[Link a video o explicación]</a></li>
+          </ul>
+        </div>
+      </details>
+
+      <!-- Versión 1.20 -->
+      <details>
+        <summary>🛠️ Versión 1.20</summary>
+        <div class="tipo-granja">
+          <h4>Granja de caña de Hierro</h4>
+          <ul>
+            <li><a href="#">[Link a video o explicación]</a></li>
+          </ul>
+        </div>
+        <div class="tipo-granja">
+          <h4>Granja de Oro</h4>
+          <ul>
+            <li><a href="#">[Link a video o explicación]</a></li>
+          </ul>
+        </div>
+      </details>
+
+      <!-- Versión 1.19 -->
+      <details>
+        <summary>⚙️ Versión 1.19</summary>
+        <div class="tipo-granja">
+          <h4>Granja de mobs</h4>
+          <ul>
+            <li><a href="#">[Link a video o explicación]</a></li>
+          </ul>
+        </div>
+      </details>
+
+      <!-- Versión 1.18 -->
+      <details>
+        <summary>🧱 Versión 1.18</summary>
+        <div class="tipo-granja">
+          <h4>Granja de hierro</h4>
+          <ul>
+            <li><a href="#">[Link a video o explicación]</a></li>
+          </ul>
+        </div>
+      </details>
+
+      <!-- Versión 1.17 -->
+      <details>
+        <summary>🌿 Versión 1.17</summary>
+        <div class="tipo-granja">
+          <h4>Granja de hierro</h4>
+          <ul>
+            <li><a href="#">[Link a video o explicación]</a></li>
+          </ul>
+        </div>
+      </details>
+
+      <p class="actualizacion">
+        Recuerda que esta página será actualizada. Si aún no ves una granja en tu versión favorita, ¡pronto la agregaremos!
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mundo Minecraft - Proyecto liceal</p>
+  </footer>
+
+  <script>
+    // Ocultar footer al hacer scroll
+    let lastScroll = 0;
+    const footer = document.querySelector("footer");
+
+    window.addEventListener("scroll", () => {
+      const currentScroll = window.pageYOffset;
+      if (currentScroll > lastScroll) {
+        footer.style.transform = "translateY(100%)";
+      } else {
+        footer.style.transform = "translateY(0)";
+      }
+      lastScroll = currentScroll;
+    });
+  </script>
+
+</body>
+</html>
