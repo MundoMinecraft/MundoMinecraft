@@ -1,0 +1,132 @@
+
+/* ==== Fuente personalizada ==== */
+@font-face {
+  font-family: 'Minecraft';
+  src: url('../Fuentes/Minecraft.ttf') format('truetype');
+}
+
+/* ==== Estilos globales ==== */
+body {
+  font-family: 'Minecraft', Arial, sans-serif;
+  color: #fff;
+  background-color: #5E7C4D;
+  margin: 0;
+  padding: 0;
+}
+
+/* ==== Tipografía de títulos ==== */
+h1, h2, h3 {
+  text-shadow: 4px 4px 0 #000;
+  letter-spacing: 1px;
+}
+
+/* ==== Encabezado ==== */
+header {
+  background-color: #3C2F2F;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+/* ==== Navegación ==== */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ==== Contenido principal ==== */
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+/* ==== Pie de página ==== */
+footer {
+  background-color: #3C2F2F;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+main {
+  padding-bottom: 60px; 
+}
+
+
+footer {
+  background-color: rgba(60, 47, 47, 0.85); /* Color con transparencia */
+  text-align: center;
+  padding: 10px;
+  position: fixed;  
+  width: 100%;
+  bottom: 0;
+  font-size: 0.9em;
+  transition: transform 0.3s ease;
+  z-index: 100;
+}
+}
+/* Estilos para Celu Crick  */
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  iframe {
+    height: 200px;
+  }
+
+  .contenedor-granjas,
+  .curiosidades,
+  .tipo-granja {
+    padding: 10px;
+  }
+
+  footer {
+    font-size: 0.8em;
+    padding: 8px;
+  }
+}
+/* Scroll horizontal para tablas en pantallas pequeñas */
+.tabla-responsive {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.tabla-responsive table {
+  min-width: 600px; /* o el ancho mínimo que necesite  */
+}
