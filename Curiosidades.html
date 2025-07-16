@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curiosidades - Mundo Minecraft</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+  <style>
+    .curiosidades {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: left;
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+    }
+
+    .curiosidades h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .curiosidades ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .curiosidades li {
+      margin-bottom: 15px;
+      padding-left: 25px;
+      position: relative;
+    }
+
+    .curiosidades li::before {
+      content: "⛏️";
+      position: absolute;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mundo Minecraft</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="video.html">Video</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="curiosidades.html">Curiosidades</a></li>
+        <li><a href="Granjas.html">Granjas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="curiosidades">
+      <h2>Curiosidades de Minecraft</h2>
+      <ul>
+        <li>El nombre original de Minecraft era "Cave Game".</li>
+        <li>Los Creepers nacieron por un error de programación.</li>
+        <li>En el idioma gallego, los bloques de "Redstone" se llaman "Piedra Carmesí".</li>
+        <li>Hay un 0.01% de probabilidad de que un zombie monte a un pollo: el famoso "Chiken Jokey".</li>
+        <li>La dimensión "The End" fue añadida mucho después que el Nether.</li>
+        <li>Las abejas fueron añadidas en la versión 1.15 en 2019.</li>
+      </ul>
+      <h2 style="margin-top: 40px; text-align: center;">Comparativa de Mobs Hostiles</h2>
+<div class="tabla-responsive">
+<table style="width: 100%; border-collapse: collapse; background-color: #222; color: #fff; border-radius: 10px; overflow: hidden;">
+  <thead>
+    <tr style="background-color: #3C2F2F;">
+      <th style="padding: 10px; border: 1px solid #444;">Mob</th>
+      <th style="padding: 10px; border: 1px solid #444;">Vida</th>
+      <th style="padding: 10px; border: 1px solid #444;">Daño</th>
+      <th style="padding: 10px; border: 1px solid #444;">Rareza</th>
+      <th style="padding: 10px; border: 1px solid #444;">Drop especial</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 10px; border: 1px solid #444;">Creeper</td>
+      <td style="padding: 10px; border: 1px solid #444;">20 (10 corazones)</td>
+      <td style="padding: 10px; border: 1px solid #444;">Hasta 49 (explosión)</td>
+      <td style="padding: 10px; border: 1px solid #444;">Común</td>
+      <td style="padding: 10px; border: 1px solid #444;">Pólvora</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; border: 1px solid #444;">Enderman</td>
+      <td style="padding: 10px; border: 1px solid #444;">40 (20 corazones)</td>
+      <td style="padding: 10px; border: 1px solid #444;">4-10</td>
+      <td style="padding: 10px; border: 1px solid #444;">Moderado</td>
+      <td style="padding: 10px; border: 1px solid #444;">Perla de Ender</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; border: 1px solid #444;">Esqueleto</td>
+      <td style="padding: 10px; border: 1px solid #444;">20</td>
+      <td style="padding: 10px; border: 1px solid #444;">2-5 (flechas)</td>
+      <td style="padding: 10px; border: 1px solid #444;">Común</td>
+      <td style="padding: 10px; border: 1px solid #444;">Huesos, flechas</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; border: 1px solid #444;">Wither</td>
+      <td style="padding: 10px; border: 1px solid #444;">300 (150 corazones)</td>
+      <td style="padding: 10px; border: 1px solid #444;">7-17 + Wither</td>
+      <td style="padding: 10px; border: 1px solid #444;">Jefe (muy raro)</td>
+      <td style="padding: 10px; border: 1px solid #444;">Estrella del Nether</td>
+    </tr>
+  </tbody>
+</table>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mundo Minecraft - Proyecto liceal</p>
+  </footer>
+<script>
+  let lastScroll = 0;
+  const footer = document.querySelector("footer");
+
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
+
+    if (currentScroll > lastScroll) {
+      // Bajando → ocultar footer
+      footer.style.transform = "translateY(100%)";
+    } else {
+      // Subiendo → mostrar footer
+      footer.style.transform = "translateY(0)";
+    }
+
+    lastScroll = currentScroll;
+  });
+</script>
+
+</body>
+</html>
